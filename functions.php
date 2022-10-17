@@ -2,7 +2,7 @@
 function finans_load_scripts()
 {
     wp_enqueue_style('bootstrap-style', get_stylesheet_directory_uri() . '/bootstrap/css/bootstrap.min.css', array(), null, 'all');
-    wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array(), null, true);
+    wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array('jquery'), null, true);
     wp_enqueue_style('finans-style', get_stylesheet_uri(), array(), null, 'all');
 }
 add_action('wp_enqueue_scripts', 'finans_load_scripts');

@@ -5,3 +5,16 @@ Theme Author: Matheus Piegas
 
 
 /* Menu principal */
+#menu-menu-principal li .nav-link::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu-menu-principal li .nav-link:hover::after {
+    width: 50%;
+}
