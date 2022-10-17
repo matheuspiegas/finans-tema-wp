@@ -7,7 +7,7 @@ function finans_load_scripts()
 }
 add_action('wp_enqueue_scripts', 'finans_load_scripts');
 
-
+/* -------------- Registrando menus bootstrap com navwalker --------------- */
 function register_navwalker(){
     if ( ! file_exists( get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php' ) ) {
         // File does not exist... return an error.
@@ -30,6 +30,7 @@ function prefix_bs5_dropdown_data_attribute( $atts, $item, $args ) {
 }
 add_filter( 'nav_menu_link_attributes', 'prefix_bs5_dropdown_data_attribute', 20, 3 );
 
+/* ------------- Registrando menus --------------- */
 function register_primary_menu(){
     register_nav_menus(
         array(
