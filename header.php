@@ -26,7 +26,7 @@
                             'walker'            => new WP_Bootstrap_Navwalker(),
                         ) );
                     ?>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
